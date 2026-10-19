@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "one-user-one-agent"
+version = "1.0.0"
+description = "Auditable per-viewer agent for the One User, One Agent challenge"
+requires-python = ">=3.11"
+dependencies = []  # runtime is standard library only
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+oua = "one_user_one_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

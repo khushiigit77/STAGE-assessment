@@ -1,0 +1,489 @@
+{
+  "pilot": {
+    "n_users": 3891,
+    "arms": {
+      "treatment": 1912,
+      "holdout": 1979
+    },
+    "data_issues": [],
+    "data_issue_count": 0,
+    "itt": {
+      "n_treat": 1912,
+      "succ_treat": 349,
+      "rate_treat": 0.1825,
+      "n_control": 1979,
+      "succ_control": 387,
+      "rate_control": 0.1956,
+      "abs_diff": -0.013,
+      "se": 0.0126,
+      "ci95": [
+        -0.0376,
+        0.0116
+      ],
+      "rel_diff": -0.0666,
+      "estimable": true
+    },
+    "itt_stratified_by_goal": {
+      "abs_diff": -0.014,
+      "se": 0.0092,
+      "ci95": [
+        -0.0321,
+        0.0041
+      ],
+      "strata_used": [
+        "G02",
+        "G04",
+        "G05",
+        "G06",
+        "G09"
+      ],
+      "strata_skipped_one_arm_only": []
+    },
+    "itt_permutation_p": 0.3053,
+    "itt_by_goal": {
+      "G02": {
+        "n_treat": 177,
+        "succ_treat": 34,
+        "rate_treat": 0.1921,
+        "n_control": 183,
+        "succ_control": 36,
+        "rate_control": 0.1967,
+        "abs_diff": -0.0046,
+        "se": 0.0417,
+        "ci95": [
+          -0.0864,
+          0.0771
+        ],
+        "rel_diff": -0.0235,
+        "estimable": true
+      },
+      "G04": {
+        "n_treat": 63,
+        "succ_treat": 15,
+        "rate_treat": 0.2381,
+        "n_control": 66,
+        "succ_control": 15,
+        "rate_control": 0.2273,
+        "abs_diff": 0.0108,
+        "se": 0.0744,
+        "ci95": [
+          -0.1351,
+          0.1567
+        ],
+        "rel_diff": 0.0476,
+        "estimable": true
+      },
+      "G05": {
+        "n_treat": 1045,
+        "succ_treat": 13,
+        "rate_treat": 0.0124,
+        "n_control": 1073,
+        "succ_control": 6,
+        "rate_control": 0.0056,
+        "abs_diff": 0.0068,
+        "se": 0.0041,
+        "ci95": [
+          -0.0012,
+          0.0149
+        ],
+        "rel_diff": 1.2247,
+        "estimable": true
+      },
+      "G06": {
+        "n_treat": 157,
+        "succ_treat": 1,
+        "rate_treat": 0.0064,
+        "n_control": 174,
+        "succ_control": 5,
+        "rate_control": 0.0287,
+        "abs_diff": -0.0224,
+        "se": 0.0142,
+        "ci95": [
+          -0.0501,
+          0.0054
+        ],
+        "rel_diff": -0.7783,
+        "estimable": true
+      },
+      "G09": {
+        "n_treat": 470,
+        "succ_treat": 286,
+        "rate_treat": 0.6085,
+        "n_control": 483,
+        "succ_control": 325,
+        "rate_control": 0.6729,
+        "abs_diff": -0.0644,
+        "se": 0.031,
+        "ci95": [
+          -0.1252,
+          -0.0036
+        ],
+        "rel_diff": -0.0957,
+        "estimable": true
+      }
+    },
+    "goal_mix_by_arm": {
+      "G02": {
+        "treatment": 177,
+        "holdout": 183
+      },
+      "G04": {
+        "treatment": 63,
+        "holdout": 66
+      },
+      "G05": {
+        "treatment": 1045,
+        "holdout": 1073
+      },
+      "G06": {
+        "treatment": 157,
+        "holdout": 174
+      },
+      "G09": {
+        "treatment": 470,
+        "holdout": 483
+      }
+    },
+    "naive_served_vs_all_others": {
+      "n_treat": 217,
+      "succ_treat": 87,
+      "rate_treat": 0.4009,
+      "n_control": 3674,
+      "succ_control": 649,
+      "rate_control": 0.1766,
+      "abs_diff": 0.2243,
+      "se": 0.0339,
+      "ci95": [
+        0.1579,
+        0.2906
+      ],
+      "rel_diff": 1.2696,
+      "estimable": true
+    },
+    "served_share_of_treatment": 0.1135,
+    "served_goal_mix": {
+      "G09": 105,
+      "G05": 84,
+      "G02": 15,
+      "G06": 12,
+      "G04": 1
+    },
+    "all_goal_mix": {
+      "G05": 2118,
+      "G06": 331,
+      "G09": 953,
+      "G02": 360,
+      "G04": 129
+    },
+    "served_in_holdout": 0,
+    "cace_wald_estimate": -0.1145
+  },
+  "replay": {
+    "n_triggered_users": 1746,
+    "arms": {
+      "holdout": 883,
+      "agent": 863
+    },
+    "goal_success_strict": {
+      "n_treat": 850,
+      "succ_treat": 72,
+      "rate_treat": 0.0847,
+      "n_control": 869,
+      "succ_control": 73,
+      "rate_control": 0.084,
+      "abs_diff": 0.0007,
+      "se": 0.0134,
+      "ci95": [
+        -0.0256,
+        0.027
+      ],
+      "rel_diff": 0.0083,
+      "estimable": true
+    },
+    "goal_success_strict_note": "INCONCLUSIVE counted as not succeeded",
+    "goal_success_conclusive_only": {
+      "n_treat": 850,
+      "succ_treat": 72,
+      "rate_treat": 0.0847,
+      "n_control": 869,
+      "succ_control": 73,
+      "rate_control": 0.084,
+      "abs_diff": 0.0007,
+      "se": 0.0134,
+      "ci95": [
+        -0.0256,
+        0.027
+      ],
+      "rel_diff": 0.0083,
+      "estimable": true
+    },
+    "inconclusive_by_arm": {},
+    "goal_success_stratified_by_goal": {
+      "abs_diff": 0.0008,
+      "se": 0.0123,
+      "ci95": [
+        -0.0234,
+        0.025
+      ],
+      "strata_used": [
+        "G01",
+        "G02",
+        "G04",
+        "G05",
+        "G06",
+        "G07",
+        "G08",
+        "G09",
+        "G12"
+      ],
+      "strata_skipped_one_arm_only": [
+        "G03"
+      ]
+    },
+    "goal_success_permutation_p": 1.0,
+    "goal_success_by_goal": {
+      "G01": {
+        "n_treat": 61,
+        "succ_treat": 20,
+        "rate_treat": 0.3279,
+        "n_control": 53,
+        "succ_control": 15,
+        "rate_control": 0.283,
+        "abs_diff": 0.0448,
+        "se": 0.0863,
+        "ci95": [
+          -0.1242,
+          0.2139
+        ],
+        "rel_diff": 0.1585,
+        "estimable": true
+      },
+      "G02": {
+        "n_treat": 21,
+        "succ_treat": 5,
+        "rate_treat": 0.2381,
+        "n_control": 21,
+        "succ_control": 1,
+        "rate_control": 0.0476,
+        "abs_diff": 0.1905,
+        "se": 0.1039,
+        "ci95": [
+          -0.0132,
+          0.3941
+        ],
+        "rel_diff": 4.0,
+        "estimable": true
+      },
+      "G03": {
+        "n_treat": 1,
+        "n_control": 0,
+        "estimable": false
+      },
+      "G04": {
+        "n_treat": 1,
+        "succ_treat": 0,
+        "rate_treat": 0.0,
+        "n_control": 1,
+        "succ_control": 0,
+        "rate_control": 0.0,
+        "abs_diff": 0.0,
+        "se": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "rel_diff": null,
+        "estimable": true
+      },
+      "G05": {
+        "n_treat": 140,
+        "succ_treat": 5,
+        "rate_treat": 0.0357,
+        "n_control": 125,
+        "succ_control": 6,
+        "rate_control": 0.048,
+        "abs_diff": -0.0123,
+        "se": 0.0247,
+        "ci95": [
+          -0.0608,
+          0.0362
+        ],
+        "rel_diff": -0.256,
+        "estimable": true
+      },
+      "G06": {
+        "n_treat": 9,
+        "succ_treat": 0,
+        "rate_treat": 0.0,
+        "n_control": 10,
+        "succ_control": 1,
+        "rate_control": 0.1,
+        "abs_diff": -0.1,
+        "se": 0.0949,
+        "ci95": [
+          -0.2859,
+          0.0859
+        ],
+        "rel_diff": -1.0,
+        "estimable": true
+      },
+      "G07": {
+        "n_treat": 512,
+        "succ_treat": 11,
+        "rate_treat": 0.0215,
+        "n_control": 543,
+        "succ_control": 17,
+        "rate_control": 0.0313,
+        "abs_diff": -0.0098,
+        "se": 0.0098,
+        "ci95": [
+          -0.0291,
+          0.0095
+        ],
+        "rel_diff": -0.3138,
+        "estimable": true
+      },
+      "G08": {
+        "n_treat": 31,
+        "succ_treat": 9,
+        "rate_treat": 0.2903,
+        "n_control": 41,
+        "succ_control": 11,
+        "rate_control": 0.2683,
+        "abs_diff": 0.022,
+        "se": 0.1069,
+        "ci95": [
+          -0.1876,
+          0.2316
+        ],
+        "rel_diff": 0.0821,
+        "estimable": true
+      },
+      "G09": {
+        "n_treat": 19,
+        "succ_treat": 3,
+        "rate_treat": 0.1579,
+        "n_control": 15,
+        "succ_control": 2,
+        "rate_control": 0.1333,
+        "abs_diff": 0.0246,
+        "se": 0.1213,
+        "ci95": [
+          -0.2131,
+          0.2622
+        ],
+        "rel_diff": 0.1842,
+        "estimable": true
+      },
+      "G12": {
+        "n_treat": 55,
+        "succ_treat": 19,
+        "rate_treat": 0.3455,
+        "n_control": 60,
+        "succ_control": 20,
+        "rate_control": 0.3333,
+        "abs_diff": 0.0121,
+        "se": 0.0884,
+        "ci95": [
+          -0.1611,
+          0.1854
+        ],
+        "rel_diff": 0.0364,
+        "estimable": true
+      }
+    },
+    "goal_mix_by_arm": {
+      "G01": {
+        "holdout": 53,
+        "agent": 61
+      },
+      "G02": {
+        "agent": 21,
+        "holdout": 21
+      },
+      "G03": {
+        "agent": 1
+      },
+      "G04": {
+        "agent": 1,
+        "holdout": 1
+      },
+      "G05": {
+        "agent": 140,
+        "holdout": 125
+      },
+      "G06": {
+        "agent": 9,
+        "holdout": 10
+      },
+      "G07": {
+        "holdout": 543,
+        "agent": 512
+      },
+      "G08": {
+        "holdout": 41,
+        "agent": 31
+      },
+      "G09": {
+        "agent": 19,
+        "holdout": 15
+      },
+      "G12": {
+        "holdout": 60,
+        "agent": 55
+      }
+    },
+    "no_goal_by_arm": {
+      "holdout": 14,
+      "agent": 13
+    },
+    "played_7d": {
+      "n_treat": 863,
+      "succ_treat": 581,
+      "rate_treat": 0.6732,
+      "n_control": 883,
+      "succ_control": 571,
+      "rate_control": 0.6467,
+      "abs_diff": 0.0266,
+      "se": 0.0227,
+      "ci95": [
+        -0.0178,
+        0.071
+      ],
+      "rel_diff": 0.0411,
+      "estimable": true
+    },
+    "purchased_14d": {
+      "n_treat": 863,
+      "succ_treat": 36,
+      "rate_treat": 0.0417,
+      "n_control": 883,
+      "succ_control": 36,
+      "rate_control": 0.0408,
+      "abs_diff": 0.0009,
+      "se": 0.0095,
+      "ci95": [
+        -0.0177,
+        0.0196
+      ],
+      "rel_diff": 0.0232,
+      "estimable": true
+    },
+    "naive_served_vs_unserved_within_agent_arm": {
+      "n_treat": 768,
+      "succ_treat": 72,
+      "rate_treat": 0.0938,
+      "n_control": 82,
+      "succ_control": 0,
+      "rate_control": 0.0,
+      "abs_diff": 0.0938,
+      "se": 0.0105,
+      "ci95": [
+        0.0731,
+        0.1144
+      ],
+      "rel_diff": null,
+      "estimable": true
+    }
+  }
+}

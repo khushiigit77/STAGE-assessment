@@ -1,0 +1,49 @@
+{
+  "definition": "processing_ms = measured wall-clock compute + simulated dependency latency (model calls, injected store latency/timeouts). published_at = deliver_at + processing_ms.",
+  "decisions_total": 2769,
+  "decisions_excluding_duplicates": 2679,
+  "status_counts": {
+    "PUBLISHED": 1006,
+    "NO_ACTION": 1672,
+    "DUPLICATE": 90,
+    "FAILED": 1
+  },
+  "processing_ms": {
+    "median": 405.166,
+    "p95": 408.889,
+    "max": 5006.916
+  },
+  "real_compute_ms": {
+    "median": 5.783,
+    "p95": 8.969,
+    "max": 839.939
+  },
+  "published_processing_ms": {
+    "median": 406.487,
+    "p95": 409.648,
+    "max": 2512.614
+  },
+  "budget_s": 60.0,
+  "over_budget": 0,
+  "failures": 1,
+  "failure_reasons": {
+    "attempt 1: user_data_store read timed out after Ns": 1
+  },
+  "model_fallbacks": 21,
+  "model_calls": {
+    "total": 1737,
+    "max_per_decision": 2,
+    "limit": 8
+  },
+  "tool_calls": {
+    "total": 17163,
+    "max_per_decision": 8,
+    "limit": 20
+  },
+  "peak_triggers_per_minute": [
+    [
+      "2026-10-01T04:45",
+      79
+    ]
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "counts": {
+    "catalogue_instruction_like_text_ignored": 2,
+    "events_duplicate_event_ids_dropped": 2176,
+    "live_duplicate_event_ids_dropped": 7,
+    "profile_duplicate_row": 30
+  },
+  "samples": {
+    "catalogue_instruction_like_text_ignored": [
+      "T0002",
+      "T0522"
+    ],
+    "profile_duplicate_row": [
+      "U-04215",
+      "U-01593",
+      "U-01198",
+      "U-01041",
+      "U-03517"
+    ]
+  }
+}
